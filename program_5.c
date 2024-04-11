@@ -1,11 +1,11 @@
 /*
-Write a C program to store N numbers in an array and compute 
-the sum of all even and odd numbers in an array.
+    Write a C program to store N numbers in an array and compute 
+    the sum of all even and odd numbers in an array.
 */
 
 #include <stdio.h>
 
-#define MAX_SIZE 100  // Maximum size of the array
+#define MAX_SIZE 100 
 
 int main() {
     int arr[MAX_SIZE], n, i;

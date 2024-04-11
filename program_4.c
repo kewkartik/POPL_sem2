@@ -1,6 +1,6 @@
 /*
-Write a program to accept n number of element from user (where, n is specified by user)
-and stores data in an array and display the largest element of that array using loops.
+    Write a program to accept n number of element from user (where, n is specified by user)
+    and stores data in an array and display the largest element of that array using loops.
 */
 
 #include <stdio.h>

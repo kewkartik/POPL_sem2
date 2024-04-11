@@ -1,5 +1,5 @@
 /*
-Write a program generate Fibonacci series with a recursive function.
+    Write a program generate Fibonacci series with a recursive function.
 */
 
 #include <stdio.h>

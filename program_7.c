@@ -1,6 +1,6 @@
 /*
-Write a program to swap values of two elements. 
-Use function and pass argument using call by Value and call by reference.
+    Write a program to swap values of two elements. 
+    Use function and pass argument using call by Value and call by reference.
 */
 
 #include <stdio.h>

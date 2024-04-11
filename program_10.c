@@ -1,13 +1,12 @@
 /*
-Write a program to define a structure for customer bank account that holds information
-like account number, name of account holder, balance, internet banking facility availed (Yes
-or No), account type (saving, recurring, deposit):
-a) Read account details for N customers.
-b) Identify the golden, silver and general customers.
-c) Golden customers: Balance > 10, 00,000. Silver Customers: Balance > 5, 00, 000 and
-< 10, 00,000. General customers: Balance <5, 00, 000.
-d) Display the list of customers availing the internet banking facility.
-
+    Write a program to define a structure for customer bank account that holds information
+    like account number, name of account holder, balance, internet banking facility availed (Yes
+    or No), account type (saving, recurring, deposit):
+    a) Read account details for N customers.
+    b) Identify the golden, silver and general customers.
+    c) Golden customers: Balance > 10, 00,000. Silver Customers: Balance > 5, 00, 000 and
+    < 10, 00,000. General customers: Balance <5, 00, 000.
+    d) Display the list of customers availing the internet banking facility.
 */
 
 #include <stdio.h>

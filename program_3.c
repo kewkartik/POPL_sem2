@@ -1,6 +1,6 @@
 /*
-Write a program to check whether given number is Prime or not. 
-Take a number as input from user.
+    Write a program to check whether given number is Prime or not. 
+    Take a number as input from user.
 */
 
 #include <stdio.h>

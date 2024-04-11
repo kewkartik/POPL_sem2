@@ -1,11 +1,11 @@
 /*
-A class teacher wants to keep record of 10 students in the class along with the names and
-marks
-obtained in 5 subjects. Write a C program with structure that displays :
-a) Overall percentage result of the class
-b) Total number of passing students in the class,
-c) Total number of students failing in one subject
-d) Total number of distinctions in the class.
+    A class teacher wants to keep record of 10 students in the class along with the names and
+    marks
+    obtained in 5 subjects. Write a C program with structure that displays :
+    a) Overall percentage result of the class
+    b) Total number of passing students in the class,
+    c) Total number of students failing in one subject
+    d) Total number of distinctions in the class.
 */
 
 #include <stdio.h>

@@ -1,9 +1,9 @@
 /*
-Write a program that uses functions to perform the following operations:
-a) Reading a complex Number
-b) Writing a complex number
-c) Addition of two complex numbers
-d) Multiplication of two complex numbers
+    Write a program that uses functions to perform the following operations:
+    a) Reading a complex Number
+    b) Writing a complex number
+    c) Addition of two complex numbers
+    d) Multiplication of two complex numbers
 */
 
 #include <stdio.h>
