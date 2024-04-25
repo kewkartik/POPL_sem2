@@ -1,55 +1,66 @@
-/*
-    Write a program that uses functions to perform the following operations:
-    a) Reading a complex Number
-    b) Writing a complex number
-    c) Addition of two complex numbers
-    d) Multiplication of two complex numbers
-*/
-
+// addition of complex numbers
 #include <stdio.h>
-#include <complex.h>
 
-// Function to read a complex number from the user
-double complex read_complex_number() {
-    double real, imag;
-    printf("Enter the real part: ");
-    scanf("%lf", &real);
-    printf("Enter the imaginary part: ");
-    scanf("%lf", &imag);
-    return real + imag * I;
+typedef struct complex complex;
+// define a structure for complex number
+struct complex {
+  int real;
+  int img;
 };
 
-// Function to print a complex number
-void print_complex_number(double complex num) {
-    printf("%.2f + %.2fi\n", creal(num), cimag(num));
+complex add(complex a, complex b) {
+  struct complex sum;
+  sum.real = a.real + b.real;
+  sum.img = a.img + b.img;
+  return sum;
 }
 
-// Function to add two complex numbers
-double complex add_complex_numbers(double complex num1, double complex num2) {
-    return num1 + num2;
+complex print(complex a, char name[20]) {
+  printf("%s = %d + %di \n", name, a.real, a.img);
+  return a;
+};
+
+complex multiply(complex a, complex b) {
+  complex mul;
+  mul.real = a.real * b.real - a.img * b.img;
+  mul.img = a.real * b.img + a.img * b.real;
+  return mul;
 }
 
-// Function to multiply two complex numbers
-double complex multiply_complex_numbers(double complex num1, double complex num2) {
-    return num1 * num2;
+complex input(complex a) {
+  printf("Enter the real part : \n");
+  scanf("%d", &a.real);
+  printf("Enter the imaginary part : \n");
+  scanf("%d", &a.img);
+  return a;
 }
 
 int main() {
-    double complex num1, num2, result;
 
-    printf("Enter the first complex number:\n");
-    num1 = read_complex_number();
+  complex a, b, sum, mul;
+  printf("Enter the real and imaginary part of first complex number: \n");
+  a = input(a); // input First complex number
+  printf("Enter the real and imaginary part of second complex number: \n");
+  b = input(b); // input second complex number
 
-    printf("Enter the second complex number:\n");
-    num2 = read_complex_number();
+  print(a, "a"); // print first complex number
+  print(b, "b"); // print second complex number
 
-    printf("\nAddition:\n");
-    result = add_complex_numbers(num1, num2);
-    print_complex_number(result);
+  int choice;
+  printf("Enter 1 for addition and 2 for multiplication: \n");
+  scanf("%d", &choice);
+  switch (choice) {
+  case 1:
+    sum = add(a, b);
+    print(sum, "sum");
+    break;
+  case 2:
+    mul = multiply(a, b);
+    print(mul, "mul");
+    break;
+  default:
+    printf("Invalid choice\n");
+  }
 
-    printf("\nMultiplication:\n");
-    result = multiply_complex_numbers(num1, num2);
-    print_complex_number(result);
-
-    return 0;
+  return 0;
 }
