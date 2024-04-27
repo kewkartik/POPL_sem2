@@ -20,8 +20,7 @@ int main() {
 
     for (int i = 0; i < len; i++) {
         // Check if the character is a vowel
-        if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
-            str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U') {
+        if (st  r[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U') {
             // Append to vowel array
             c = str[i];
             strncat(vowel, &c, 1);
